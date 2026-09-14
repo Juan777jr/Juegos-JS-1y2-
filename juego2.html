@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Piedra, Papel o Tijera</title>
+  <link rel="stylesheet" href="juego2.css">
+</head>
+<body>
+
+  <div class="juego">
+    <h3>Piedra, papel o tijeras</h3>
+    <p>Elige una opción para jugar contra la computadora.</p>
+    
+    <div class="opciones">
+      <button class="btnOpcion" data-opcion="piedra">
+        <svg viewBox="0 0 40 40" width="28" height="28"><circle cx="20" cy="20" r="14" fill="#8a8fa3"></circle></svg>
+        Piedra
+      </button>
+
+      <button class="btnOpcion" data-opcion="papel">
+        <svg viewBox="0 0 40 40" width="28" height="28"><rect x="9" y="5" width="22" height="30" rx="2" fill="#2451c4"></rect></svg>
+        Papel
+      </button>
+
+      <button class="btnOpcion" data-opcion="tijera">
+        <svg viewBox="0 0 40 40" width="28" height="28">
+          <line x1="8" y1="8" x2="32" y2="32" stroke="#d1435b" stroke-width="4" stroke-linecap="round"></line>
+          <line x1="32" y1="8" x2="8" y2="32" stroke="#d1435b" stroke-width="4" stroke-linecap="round"></line>
+          <circle cx="8" cy="8" r="3" fill="#d1435b"></circle>
+          <circle cx="8" cy="32" r="3" fill="#d1435b"></circle>
+        </svg>
+        Tijera
+      </button>
+    </div>
+
+    <p id="resultadoJuego2"></p>
+    <p id="marcadorJuego2">Ganadas: 0 | Perdidas: 0 | Empates: 0</p>
+    <button id="btnReiniciarJuego2">Reiniciar marcador</button>
+  </div>
+
+  <script src="juego2.js"></script>
+</body>
+</html>
