@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simón Dice</title>
+    <link rel="stylesheet" href="simon_dice.css">
+</head>
+<body>
+    <div class="juego">
+        <h3>Simón dice</h3>
+        <p>Memoriza y repite la secuencia de colores. Ronda: <span id="rondaSimon">0</span></p>
+        
+        <div class="tableroSimon">
+            <button class="colorSimon colorVerde" data-color="0" id="colorVerde">1</button>
+            <button class="colorSimon colorRojo" data-color="1" id="colorRojo">2</button>
+            <button class="colorSimon colorAmarillo" data-color="2" id="colorAmarillo">3</button>
+            <button class="colorSimon colorAzul" data-color="3" id="colorAzul">4</button>
+        </div>
+
+        <p id="mensajeSimon"></p>
+        <button id="btnIniciarSimon">Iniciar juego</button>
+    </div>
+
+    <script src="simon_dice.js"></script>
+</body>
+</html>

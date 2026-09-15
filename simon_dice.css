@@ -1,0 +1,46 @@
+.juego {
+  background: #ffffff;
+  border: 1px solid #e3e5ee;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 420px;
+}
+
+.tableroSimon {
+  display: grid;
+  grid-template-columns: 90px 90px;
+  grid-template-rows: 90px 90px;
+  gap: 8px;
+  margin: 16px 0;
+  width: 188px;
+}
+
+.colorSimon {
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, sans-serif;
+  user-select: none;
+}
+
+.colorSimon:active {
+  transform: scale(0.96);
+}
+
+.colorVerde { background: #17a673; }
+.colorRojo { background: #d1435b; }
+.colorAmarillo { background: #d9c02d; }
+.colorAzul { background: #2451c4; }
+
+.colorSimon.activo {
+  opacity: 1;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
+}

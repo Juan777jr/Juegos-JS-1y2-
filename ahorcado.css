@@ -1,0 +1,41 @@
+.juego {
+  background: #ffffff;
+  border: 1px solid #e3e5ee;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 420px;
+}
+
+.dibujoAhorcado {
+  margin: 10px 0;
+}
+
+.palabraOculta {
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+  font-family: Consolas, monospace;
+}
+
+.teclado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 360px;
+  margin: 12px 0;
+}
+
+.teclaAhorcado {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c9cce0;
+  border-radius: 6px;
+  background: #f7f8fd;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.teclaAhorcado:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
